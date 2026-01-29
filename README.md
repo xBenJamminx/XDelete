@@ -2,6 +2,8 @@
 
 Script to delete all X/Twitter tweets and undo retweets from your profile.
 
+> Forked from [techleadhd/XDelete](https://github.com/techleadhd/XDelete) - thanks to the original author for the initial implementation!
+
 ## Features
 
 - Deletes your original tweets
