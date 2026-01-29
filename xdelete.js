@@ -1,23 +1,3 @@
-# XDelete
-
-Script to delete all X/Twitter tweets and undo retweets from your profile.
-
-## Features
-
-- Deletes your original tweets
-- Undoes retweets
-- Auto-scrolls to load more tweets
-- Handles rate limiting with randomized delays
-- Processes entire timeline until complete
-
-## How to Use
-
-1. Open Chrome and go to your X profile: `https://x.com/USERNAME/with_replies`
-2. Open Developer Tools (F12 or Ctrl+Shift+J)
-3. Go to the Console tab
-4. Copy/paste the script below and press Enter
-
-```javascript
 const deleteAllTweets = async () => {
   const processed = new Set();
   const selectors = {
@@ -111,12 +91,3 @@ const deleteAllTweets = async () => {
 };
 
 deleteAllTweets().catch(err => console.error('Script failed:', err));
-```
-
-## Notes
-
-- Keep the browser tab focused while running
-- The script will automatically stop when it reaches the end of your timeline
-- If you get rate limited, wait a few minutes and run again
-
-<img width="813" alt="Screenshot 2023-12-31 at 7 18 45 PM" src="https://github.com/techleadhd/XDelete/assets/61847557/473165c5-9b7c-4065-98fd-5856fcbfb3a8">
